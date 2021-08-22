@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+:root {
+  --bg-color: #221e1F;
+  --electric-blue: #24bde9;
+  --white: #fffeff;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li,a{
+  font-family: 'Electrolize', sans-serif;
+  color: var(--white); -webkit-text-stroke: 0.5px black;
+}
+
+.container{
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo{
+  padding-left: 1%;
+  width: 45%;
+}
+
+#nav-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+
+#nav-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#nav-items > li{
+  padding: 0 50px;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+hr{
+  color: var(--white);
+}
+
+.left-img{
+  background: linear-gradient(90deg, rgba(34,30,31,1) 0%, rgba(36,189,233,1) 100%);;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-div{
+  width: 45vw;
+}
+
+#img{
+  height: 100%;
+  width: 100%;
+}
+
+.explaination{
+  padding: 2%;
+  width: 60vw;
+}
+
+.explaination > h1 {
+  padding: 1%;
+  text-align: center;
+  font-size: 3.0rem;
+}
+
+.explaination > p {
+  padding: 1%;
+  text-align:: center;
+  font-size: 1.5rem;
+}
+
+.explaination > ul{
+  padding: 1%;
+  text-align: center;
+  font-size: 1.4rem;
+}
