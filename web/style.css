@@ -6,14 +6,19 @@
   --white: #fffeff;
 }
 
+html {
+  scroll-padding-top: 10vh;
+}
+
 *{
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6,p,ul,li,a{
+h1,h2,h3,h4,h5,h6,p,ul,li,a,span{
   font-family: 'Electrolize', sans-serif;
-  color: var(--white); -webkit-text-stroke: 0.5px black;
+  color: var(--white); -webkit-text-stroke: 0.5px var(--bg-color);
 }
 
 .container{
@@ -27,6 +32,8 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  border-bottom: solid 1px var(--white);
 }
 
 #logo{
@@ -53,7 +60,7 @@ header{
   font-size: 1.5rem;
 }
 
-a{
+a > li{
   text-decoration: none;
   cursor: pointer;
 }
@@ -62,16 +69,58 @@ hr{
   color: var(--white);
 }
 
-.left-img{
-  background: linear-gradient(90deg, rgba(34,30,31,1) 0%, rgba(36,189,233,1) 100%);;
+.about{
+background-color: var(--bg-color);
+width: 100vw;
+display: flex;
+flex-direction: row;
+margin-top: 10vh;
+}
+
+.about > div{
+  padding: 5%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.right-img{
+  background: linear-gradient(90deg, rgba(34,30,31,1) 0%, rgba(36,189,233,1) 100%);
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.img-div{
+.left-img{
+  background: linear-gradient(90deg, rgba(36,189,233,1) 0%, rgba(34,30,31,1) 100%);
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#fixing{
   width: 45vw;
+  background-image: url(fneq.jpg);
+  background-size: cover;
+}
+
+#alteration{
+  width: 45vw;
+  background-image: url(alter.jpg);
+  background-size: cover;
+}
+
+#remedial{
+  width: 45vw;
+  background-image: url(remed.jpg);
+  background-size: cover;
+}
+
+#neinst{
+  width: 45vw;
+  background-image: url(neinst.jpg);
+  background-size: cover;
 }
 
 #img{
@@ -100,4 +149,56 @@ hr{
   padding: 1%;
   text-align: center;
   font-size: 1.4rem;
+}
+
+.contacts{
+background-color: var(--bg-color);
+width: 100vw;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.contacts > .contact{
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact > h1{
+  font-size: 3.0rem;
+  padding: 1%;
+}
+
+.contact > span{
+  font-size: 1.5rem;
+}
+
+.contacts > .faq{
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.faq > h1{
+  font-size: 3.0rem;
+  padding: 1%;
+}
+
+.faq > ol{
+  font-size: 1.2rem;
+  padding: 1%;
+}
+
+footer{
+  background-color: var(--bg-color);
+  width: 100vw;
+  padding: 1%;
+  color: var(--white);
 }
