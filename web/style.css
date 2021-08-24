@@ -60,6 +60,14 @@ header{
   font-size: 1.5rem;
 }
 
+#nav-items > li:first-child{
+  display: none;
+}
+
+.nav_checkbox, .nav_toggle{
+  display: none;
+}
+
 a > li{
   text-decoration: none;
   cursor: pointer;
@@ -201,4 +209,79 @@ footer{
   width: 100vw;
   padding: 1%;
   color: var(--white);
+}
+
+/* Changes to css for mobile users */
+@media only screen and (max-width: 760px) {
+  #logo{
+    display: none;
+  }
+
+  .nav_toggle{
+    display: inline;
+    position: absolute;
+    cursor: pointer;
+    padding-right: 5%;
+    right: 0;
+    padding-top: 5%;
+  }
+
+  svg{
+    width: 1.5rem;
+    fill: var(--white)
+  }
+
+  .close{
+    display: none;
+  }
+
+  #nav-bar{
+    padding: 0;
+  }
+
+
+  #nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  #nav-items > li{
+    padding: 0 0;
+    display: none;
+    text-decoration: none;
+  }
+
+  #nav-items > li:first-child{
+    display: inline-block;
+  }
+
+  #logo-mobile{
+    width: 70vw;
+    display: block;
+  }
+
+  #nav-storti{
+    margin-left: 45px;
+    text-align: center;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #nav_checkbox:checked ~ ul#nav-items li {
+  display: block;
+  }
+
+  #nav_checkbox:checked ~ label.nav_toggle .close {
+  display: block;
+  }
+
+  #nav_checkbox:checked ~ label.nav_toggle .menu {
+  display: none;
+  }
+
 }
