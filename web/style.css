@@ -73,6 +73,10 @@ a > li{
   cursor: pointer;
 }
 
+br > li{
+  display: none;
+}
+
 hr{
   color: var(--white);
 }
@@ -85,7 +89,7 @@ flex-direction: row;
 margin-top: 10vh;
 }
 
-.about > div{
+.about > p{
   padding: 5%;
   text-align: center;
   font-size: 1.5rem;
@@ -107,33 +111,25 @@ margin-top: 10vh;
   justify-content: space-between;
 }
 
-#fixing{
+.img-div{
   width: 45vw;
-  background-image: url(fneq.jpg);
   background-size: cover;
+}
+
+#fixing{
+  background-image: url(fneq.jpg);
 }
 
 #alteration{
-  width: 45vw;
   background-image: url(alter.jpg);
-  background-size: cover;
 }
 
 #remedial{
-  width: 45vw;
   background-image: url(remed.jpg);
-  background-size: cover;
 }
 
 #neinst{
-  width: 45vw;
   background-image: url(neinst.jpg);
-  background-size: cover;
-}
-
-#img{
-  height: 100%;
-  width: 100%;
 }
 
 .explaination{
@@ -213,6 +209,10 @@ footer{
 
 /* Changes to css for mobile users */
 @media only screen and (max-width: 760px) {
+  html {
+    scroll-padding-top: 11vh;
+  }
+
   #logo{
     display: none;
   }
@@ -223,7 +223,7 @@ footer{
     cursor: pointer;
     padding-right: 5%;
     right: 0;
-    padding-top: 5%;
+    padding-top: 9%;
   }
 
   svg{
@@ -246,6 +246,8 @@ footer{
     justify-content: center;
     gap: 2rem;
     align-items: center;
+    padding-bottom: 4%;
+    padding-top: 4%;
   }
 
   #nav-items > li{
@@ -272,6 +274,10 @@ footer{
     text-decoration: none;
   }
 
+  br > li{
+    display: block;
+  }
+
   #nav_checkbox:checked ~ ul#nav-items li {
   display: block;
   }
@@ -284,4 +290,64 @@ footer{
   display: none;
   }
 
+  .about > p{
+    font-size: 1.2rem;
+  }
+
+  .explaination > h1{
+    font-size: 2.0rem;
+  }
+
+  .explaination > p{
+    font-size: 1.0rem;
+  }
+
+  .explaination > ul{
+    font-size: 0.8rem;
+  }
+
+  .right-img, .left-img{
+    background: linear-gradient(0deg, rgba(34,30,31,1) 40%, rgba(36,182,233,1) 100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-div{
+    width: 100vw;
+    height: 40vw;
+    background-position: bottom;
+  }
+
+  #neinst{
+    background-position: top;
+  }
+
+
+  .contact > h1{
+    font-size: 2.0rem;
+    padding: 1%;
+  }
+
+  .contact > span{
+    font-size: 1.0rem;
+  }
+
+  .faq > h1{
+    font-size: 2.0rem;
+    padding: 1%;
+  }
+
+  .faq > ol{
+    font-size: 0.8rem;
+    padding: 1%;
+  }
+
+  .contacts{
+  flex-direction: column;
+  }
+
+  footer{
+    font-size: 0.8rem;
+  }
 }

@@ -14,7 +14,7 @@
         </div>
         <nav id="nav-bar">
           <input type="checkbox" class="nav_checkbox" id="nav_checkbox">
-          <label for="nav_checkbox" class="nav_toggle">
+          <label for="nav_checkbox" class="nav_toggle" id="nav_toggle">
             <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
               <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
             </svg>
@@ -32,9 +32,7 @@
       </header>
       <hr>
       <section class="about" id="about">
-        <div id="thomas-gw">
           <p>Thomas GW Electrician is an electrical company based in Telford. We specialize in domestic electrical service. We carry out all electrical works from changing lamps to full rewiring or replacement distribution boards or fast electrical troubleshouting. Registered as DOMESTIC INSTALLER in NICEIC we deliver electrical service on high quality, safe and in good workmanship. We are small company but very mobile with fast service and available for clients 24 hours 7 days a week. We can go in every place in the UK but most works we make in West Midland. </p>
-        </div>
       </section>
       <hr>
       <section class="right-img" id="wwo">
@@ -64,7 +62,7 @@
             <li>New Wiring</li>
             <li>Moving Switches & Sockets</li>
             <li>Additional Sockets, Lamps, Switches</li>
-            <li>Changing Traditional Lighting to Downlights</li>
+            <li>Changing Traditional Lighting <br> to Downlights</li>
           </ul>
         </div>
         <div class="img-div" id="alteration">
@@ -124,8 +122,26 @@
       </section>
       <hr>
       <footer>
-        <span>Copyright 2021, John Marino, All rights reserved.</span>
+        <span>Copyright 2021, Johnatan Marino, All rights reserved.</span>
       </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+      $("#nav-items li a").click(() => {
+          $("#nav_checkbox").prop("checked", false);
+      });
+      $('html').click(() => {
+          $("#nav_checkbox").prop("checked", false);
+      });
+      $('#nav-bar').click(event => {
+          event.stopPropagation();
+      });
+      $(window).scroll(() => {
+          $("#nav_checkbox").prop("checked", false);
+      });
+      $(window).scroll(event => {
+          event.stopPropagation();
+      });
+      </script>
     </div>
   </body>
 </html>
