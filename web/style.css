@@ -179,7 +179,7 @@ footer{
 }
 
 /* Changes to css for mobile users */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1366px) {
   html {
     scroll-padding-top: 16vh;
   }
@@ -316,6 +316,228 @@ footer{
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  html {
+    scroll-padding-top: 21vh;
+  }
+
+  .about{
+    margin-top: 21vh;
+  }
+}
+
+@media only screen and (max-width: 1112px) {
+  html {
+    scroll-padding-top: 18vh;
+  }
+
+  .about{
+    margin-top: 18vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    scroll-padding-top: 16vh;
+  }
+
+  #logo{
+    display: none;
+  }
+
+  .nav_toggle{
+    display: inline;  position: absolute;
+    cursor: pointer;  padding-right: 5%;
+    right: 0; padding-top: 6%;
+  }
+
+  svg{
+    width: 1.5rem; fill: var(--white)
+  }
+
+  .close{
+    display: none;
+  }
+
+  #nav-bar{
+    padding: 0;
+  }
+
+
+  #nav-items{
+    display: flex; flex-direction: column;
+    justify-content: center;  gap: 2rem;  align-items: center;
+    padding-bottom: 4%;  padding-top: 4%;
+  }
+
+  #nav-items > li{
+    padding: 0 0; display: none;
+    text-decoration: none;
+  }
+
+  #nav-items > li:first-child{
+    display: inline-block;
+  }
+
+  #logo-mobile{
+    width: 40vw; display: block;
+  }
+
+  #nav-storti{
+    margin-left: 45px;  text-align: center;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  br > li{
+    display: block;
+  }
+
+  #nav_checkbox:checked ~ ul#nav-items li {
+  display: block;
+  }
+
+  #nav_checkbox:checked ~ label.nav_toggle .close {
+  display: block;
+  }
+
+  #nav_checkbox:checked ~ label.nav_toggle .menu {
+  display: none;
+  }
+
+  .about{
+    margin-top: 16vh;
+  }
+
+  .about-img{
+    width: 340px;  height: 81px;
+    margin-top: 5vh;
+  }
+
+  #poland-flag{
+    width: 40px;
+    height: 20px;
+  }
+
+  .about > p{
+    font-size: 1.2rem;
+  }
+
+  .explaination > h1{
+    font-size: 2.0rem;
+  }
+
+  .explaination > p{
+    font-size: 1.0rem;
+  }
+
+  .explaination > ul{
+    font-size: 0.8rem;
+  }
+
+  .right-img, .left-img{
+    background: linear-gradient(0deg, rgba(34,30,31,1) 40%, rgba(36,182,233,1) 100%);
+    flex-direction: column; justify-content: center;
+    align-items: center;
+  }
+
+  .img-div{
+    width: 100vw;  height: 40vw;
+    background-position: bottom;
+  }
+
+  #neinst{
+    background-position: top;
+  }
+
+
+  .contact > h1{
+    font-size: 2.0rem; padding: 1%;
+  }
+
+  .contact > span{
+    font-size: 1.0rem;
+  }
+
+  .faq > h1{
+    font-size: 2.0rem; padding: 1%;
+  }
+
+  .faq > ol{
+    font-size: 0.8rem;  padding: 1%;
+  }
+
+  .contacts{
+  flex-direction: column;
+  }
+
+  footer{
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+  html {
+    scroll-padding-top: 10vh;
+  }
+
+  .about{
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+  html {
+    scroll-padding-top: 15vh;
+  }
+
+  .about{
+    margin-top: 15vh;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  html {
+    scroll-padding-top: 22vh;
+  }
+
+  .about{
+    margin-top: 22vh;
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  html {
+    scroll-padding-top: 29vh;
+  }
+
+  .about{
+    margin-top: 29vh;
+  }
+}
+
+@media only screen and (max-width: 846px) {
+  html {
+    scroll-padding-top: 25vh;
+  }
+
+  .about{
+    margin-top: 25vh;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  html {
+    scroll-padding-top: 10vh;
+  }
+
+  .about{
+    margin-top: 10vh;
+  }
+}
+
 @media only screen and (max-width: 812px) {
   html {
     scroll-padding-top: 25vh;
@@ -323,6 +545,16 @@ footer{
 
   .about{
     margin-top: 29vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    scroll-padding-top: 8vh;
+  }
+
+  .about{
+    margin-top: 8vh;
   }
 }
 
@@ -353,6 +585,16 @@ footer{
 
   .about{
     margin-top: 24vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    scroll-padding-top: 8vh;
+  }
+
+  .about{
+    margin-top: 8vh;
   }
 }
 
@@ -490,5 +732,31 @@ footer{
 
   footer{
     font-size: 0.8rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    scroll-padding-top: 10vh;
+  }
+
+  .about{
+    margin-top: 10vh;
+  }
+
+  .about-img{
+    width: 280px; height: 66px;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  html {
+    scroll-padding-top: 19vh;
+  }
+
+  .about{
+    margin-top: 19vh;
   }
 }
